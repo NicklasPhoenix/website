@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComponentOne | WinForms UI Controls | MESCIUS</title>
-    <meta name="description" content="A complete suite of fast, flexible, and feature-rich .NET UI components and controls including the industry's best datagrid, FlexGrid.">
+    <meta name="description" content="A complete suite of fast, flexible, and feature-rich UI components for Windows Forms development.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <link href="https://unpkg.com/tabulator-tables@6.2.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="../../custom-grid.css"> 
+
+    <link rel="stylesheet" href="../../../main.css">
+    <link rel="stylesheet" href="../../../custom-grid.css"> 
     
     <link rel="shortcut icon" type="image/svg" href="http://cdn.mescius.io/umb/media/zzgitm01/msc-favicon.svg?width=32&height=32">
 </head>
@@ -22,7 +23,7 @@
     <header class="site-header">
         <div class="container">
             <nav class="main-nav">
-                <a href="../../index.html" class="logo">
+                <a href="../../../index.html" class="logo">
                     <img src="https://cdn.mescius.io/umb/media/qpqhzv25/mescius-logo-horiz-white.svg" alt="MESCIUS Logo">
                 </a>
                 <ul class="nav-links">
@@ -35,9 +36,9 @@
                                         <span class="material-icons-outlined">desktop_windows</span>
                                         <strong>.NET Controls</strong>
                                     </div>
-                                    <a href="../../products/componentone/index.html">ComponentOne Suite</a>
+                                    <a href="../index.html">ComponentOne Suite</a>
                                     <a href="./index.html">WinForms Controls</a> 
-                                    <a href="#">WPF & MAUI</a>
+                                    <a href="../wpfmaui/index.html">WPF & MAUI</a>
                                 </div>
                                 <div class="mega-menu-col">
                                    <div class="menu-item-header">
@@ -84,11 +85,10 @@
             <div class="container">
                 <div class="product-hero-content">
                     <div class="product-hero-text">
-                        <span class="product-line">.NET CONTROLS</span>
-                        <h1>ComponentOne | WinForms UI Controls</h1>
-                        <p>A complete suite of fast, flexible, and feature-rich UI components for Windows Forms development.</p>
-                        <p>Expand your toolbox with access to <strong>120+ WinForms UI controls</strong>, including:</p>
-                        <ul>
+                        <span class="product-line">ComponentOne</span>
+                        <h1>WinForms UI Controls</h1>
+                        <p>A complete suite of 120+ fast, flexible, and feature-rich UI components for Windows Forms development.</p>
+                        <ul class="feature-list">
                             <li><strong>FlexGrid</strong> - The Industry's Best WinForms Datagrid</li>
                             <li><strong>FlexChart</strong> - Over 80 Fast & Flexible WinForms Charts</li>
                             <li><strong>FlexReport</strong> - .NET Report Engine & Designer</li>
@@ -105,33 +105,25 @@
             </div>
         </section>
 
-        <section class="platforms animated-section">
+        <section class="feature-spotlight alt animated-section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Popular WinForms UI Controls</h2>
-                    <p>WinForms UI controls are interactive design elements used in desktop applications to make them more user-friendly. ComponentOne provides a complete set of dynamic, flexible WinForms controls, including grids, charts, input, and more.</p>
-                    <a href="#" class="btn btn-primary">View All WinForms Controls</a>
+                 <div class="section-header">
+                    <h2>Controls in Action</h2>
+                    <p>Explore some of our most popular WinForms controls in this interactive grid.</p>
                 </div>
-                <div class="platform-grid">
-                    <div class="platform-item">FlexGrid - WinForms Datagrid</div>
-                    <div class="platform-item">FlexChart - 80+ Chart Types</div>
-                    <div class="platform-item">FlexReport - Report Engine & Designer</div>
-                    <div class="platform-item">FlexPivot - Pivot Tables & Charts</div>
-                    <div class="platform-item">DockingTab - Workspace Docking System</div>
-                    <div class="platform-item">Ribbon - Complete Toolbar System</div>
-                </div>
+                <div id="example-table" class="data-grid"></div>
             </div>
         </section>
 
         <section class="why-us animated-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Why Choose ComponentOne for Your WinForms Applications?</h2>
+                    <h2>Why Choose ComponentOne for WinForms?</h2>
                 </div>
                 <div class="why-us-grid">
                     <div class="feature-card">
                         <span class="material-icons-outlined">speed</span>
-                        <h3>The Industry's Best .NET Datagrid</h3>
+                        <h3>The Industry's Best Datagrid</h3>
                         <p><strong>FlexGrid</strong> continues to be the industry's fastest data grid—loading large data sets up to 10x faster than the competition.</p>
                     </div>
                     <div class="feature-card">
@@ -144,86 +136,23 @@
                         <h3>Extensive and Flexible API</h3>
                         <p>Get the features you need for today and tomorrow, with an ever-growing API that allows you to customize every control to your specifications.</p>
                     </div>
-                    <div class="feature-card">
-                        <span class="material-icons-outlined">color_lens</span>
-                        <h3>Develop Desktop Apps With Style</h3>
-                        <p>Go beyond the standard desktop look-and-feel with 40+ built-in themes, or create your own with our Theme Designer.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons-outlined">tablet_mac</span>
-                        <h3>Deliver Modern, Touch-first Desktop Apps</h3>
-                        <p>Broaden the reach of your desktop apps for touch screens and tablets using our unique TouchToolkit.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons-outlined">code</span>
-                        <h3>500+ VB and C# Samples</h3>
-                        <p>Learn how to implement every feature hands-on with access to hundreds of code samples—installed locally or found on GitHub.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons-outlined">desktop_windows</span>
-                        <h3>Visual Studio 2022 and Windows 11 Support</h3>
-                        <p>With seamless toolbox and project template integration, ComponentOne is the perfect companion to Visual Studio development on Windows 11.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="material-icons-outlined">inventory_2</span>
-                        <h3>Manageable Distribution With NuGet Packages</h3>
-                        <p>Make package management effortless with ComponentOne NuGet packages on nuget.org or installed locally.</p>
-                    </div>
                 </div>
             </div>
         </section>
 
         <section class="cta-banner animated-section">
             <div class="container">
-                <h2>Schedule Time with ComponentOne's Product Manager</h2>
+                <h2>Schedule Time with a Product Manager</h2>
                 <a href="#" class="btn btn-primary">SCHEDULE NOW</a>
             </div>
         </section>
-
-        </main>
+    </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col about">
-                    <img src="https://cdn.mescius.io/umb/media/qpqhzv25/mescius-logo-horiz-white.svg" alt="MESCIUS Logo" class="footer-logo">
-                    <p class="copyright">© <span id="copyright-year">2025</span> MESCIUS inc. All Rights Reserved.</p>
-                </div>
-                <div class="footer-col links">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="../../products/componentone/index.html">ComponentOne</a></li>
-                        <li><a href="#">Wijmo</a></li>
-                        <li><a href="#">ActiveReports</a></li>
-                        <li><a href="#">Spread</a></li>
-                        <li><a href="#">Document Solutions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Demos</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Support Plans</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Media Center</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
     
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/tabulator-tables@6.2.0/dist/js/tabulator.min.js"></script>
-    <script src="../../main.js"></script>
-    <script src="../../grid-init.js"></script> 
+    <script src="../../../main.js"></script>
+    <script src="../../../grid-init.js"></script> 
 </body>
 </html>
