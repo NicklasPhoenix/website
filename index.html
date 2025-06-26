@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESCIUS - The Ultimate Developer Toolkit</title>
+    <meta name="description" content="A unique and interactive suite of UI controls, reporting tools, and document APIs for .NET and JavaScript developers.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="shortcut icon" type="image/svg" href="http://cdn.mescius.io/umb/media/zzgitm01/msc-favicon.svg?width=32&height=32">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">
+                    <img src="https://cdn.mescius.io/umb/media/qpqhzv25/mescius-logo-horiz-white.svg" alt="MESCIUS Logo">
+                </a>
+                <ul class="nav-links">
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Products <span class="material-icons-outlined">expand_more</span></a>
+                        <div class="dropdown mega-menu">
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-col">
+                                    <div class="menu-item-header">
+                                        <span class="material-icons-outlined">desktop_windows</span>
+                                        <strong>.NET Controls</strong>
+                                    </div>
+                                    <a href="products/componentone/index.html">ComponentOne Suite</a>
+                                    <a href="products/winformscontrols/index.html">WinForms Controls</a>
+                                    <a href="#">WPF & MAUI</a>
+                                </div>
+                                <div class="mega-menu-col">
+                                   <div class="menu-item-header">
+                                        <span class="material-icons-outlined">code</span>
+                                        <strong>JavaScript</strong>
+                                    </div>
+                                    <a href="#">Wijmo Grids</a>
+                                    <a href="#">SpreadJS Spreadsheets</a>
+                                    <a href="#">ActiveReportsJS</a>
+                                </div>
+                                <div class="mega-menu-col">
+                                   <div class="menu-item-header">
+                                        <span class="material-icons-outlined">article</span>
+                                        <strong>Reporting & Docs</strong>
+                                    </div>
+                                    <a href="#">ActiveReports.NET</a>
+                                    <a href="#">Spread.NET</a>
+                                    <a href="#">Document APIs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#">Support</a></li>
+                    <li class="nav-item"><a href="#">Blog</a></li>
+                    <li class="nav-item"><a href="#">Pricing</a></li>
+                </ul>
+                <div class="header-actions">
+                    <a href="#" class="btn btn-secondary">Sign In</a>
+                    <a href="#" class="btn btn-primary">Free Trial</a>
+                    <button id="themeToggle" class="icon-toggle-btn" aria-label="Toggle light/dark mode">
+                        <span class="material-icons-outlined sun-icon">light_mode</span>
+                        <span class="material-icons-outlined moon-icon">dark_mode</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Open menu">
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-shapes"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>The Ultimate Developer Toolkit</h1>
+                    <p>Build stunning, high-performance applications with our suite of .NET and JavaScript components. From datagrids to document APIs, we've got you covered.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            Get Started <span class="material-icons-outlined">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trusted-by animated-section">
+            <div class="container">
+                <h3 class="trusted-by-title">Trusted by the World’s Leading Companies</h3>
+                <div class="logos-grid">
+                    <img src="https://cdn.simpleicons.org/microsoft/white" alt="Microsoft Logo">
+                    <img src="https://cdn.simpleicons.org/disney/white" alt="Disney Logo">
+                    <img src="https://cdn.simpleicons.org/generalmotors/white" alt="GM Logo">
+                    <img src="https://cdn.simpleicons.org/generalelectric/white" alt="GE Logo">
+                    <img src="https://cdn.simpleicons.org/siemens/white" alt="Siemens Logo">
+                    <img src="https://cdn.simpleicons.org/tesla/white" alt="Tesla Logo">
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions animated-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>An Entire Ecosystem At Your Fingertips</h2>
+                    <p>Find the exact tool you need for your next project, faster.</p>
+                </div>
+                
+                <div class="button-group filter-button-group" id="solutions-filter">
+                    <button class="filter-btn is-checked" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter=".dotnet">.NET</button>
+                    <button class="filter-btn" data-filter=".javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter=".reporting">Reporting</button>
+                    <button class="filter-btn" data-filter=".grids">Grids & Spreadsheets</button>
+                    <button class="filter-btn" data-filter=".documents">Documents</button>
+                </div>
+
+                <div class="solutions-grid">
+                    <a href="products/componentone/index.html" class="solution-card-link dotnet grids"></a>
+                    <div class="solution-card dotnet grids">
+                        <div class="card-inner"><h3>ComponentOne</h3><p>The complete toolkit of fast, flexible .NET UI controls for all modern platforms.</p></div>
+                    </div>
+                    <div class="solution-card javascript grids">
+                        <div class="card-inner"><h3>Wijmo</h3><p>High-performance JavaScript datagrids with full support for Angular, React, and Vue.</p></div>
+                    </div>
+                    <div class="solution-card dotnet reporting">
+                        <div class="card-inner"><h3>ActiveReports.NET</h3><p>Embed custom reports and data visualizations directly in your .NET applications.</p></div>
+                    </div>
+                    <div class="solution-card javascript reporting">
+                        <div class="card-inner"><h3>ActiveReportsJS</h3><p>A powerful JavaScript-based reporting solution for modern web applications.</p></div>
+                    </div>
+                    <div class="solution-card dotnet grids">
+                        <div class="card-inner"><h3>Spread.NET</h3><p>Empower your .NET applications with an Excel-like spreadsheet experience.</p></div>
+                    </div>
+                    <div class="solution-card javascript grids">
+                        <div class="card-inner"><h3>SpreadJS</h3><p>The world's #1 JavaScript spreadsheet for advanced enterprise apps.</p></div>
+                    </div>
+                    <div class="solution-card dotnet documents">
+                        <div class="card-inner"><h3>Document Solutions</h3><p>High-speed .NET APIs to create, edit, and view Excel, PDF, and Word files.</p></div>
+                    </div>
+                    <div class="solution-card javascript documents">
+                        <div class="card-inner"><h3>Document Viewers</h3><p>Embed blazing-fast document viewers for any JavaScript framework.</p></div>
+                    </div>
+                    <div class="solution-card javascript">
+                        <div class="card-inner"><h3>DataViewsJS</h3><p>A lightweight, powerful data binding and manipulation tool for JS.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials animated-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Customers Say</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"We rely on the functionality of Wijmo's FlexGrid in our next-generation platform products. It's modern, full-featured, and sophisticated."</p>
+                        <div class="author">
+                            <img src="http://cdn.mescius.io/umb/media/3d5ijfz3/client-logos_thomson-reuters.svg" alt="Thomson Reuters Logo">
+                            <div class="author-info">
+                                <strong>Aaron Mendez</strong>
+                                <span>Manager of User Experience, Thomson Reuters</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Thanks for providing the best spreadsheet widget in the world, we're very happy customers. Your product has saved us a ton of time."</p>
+                        <div class="author">
+                            <img src="http://cdn.mescius.io/umb/media/kauot045/client-logos_labstep.svg" alt="Labstep Logo">
+                            <div class="author-info">
+                                <strong>Jan Domanski</strong>
+                                <span>Co-Founder, Labstep</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integration animated-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Easy to Integrate</h2>
+                    <p>Get up and running with just a few lines of code.</p>
+                </div>
+                <div class="code-showcase">
+                    <div class="code-tabs" id="code-tabs">
+                        <button class="code-tab-btn active" data-lang="js">JavaScript</button>
+                        <button class="code-tab-btn" data-lang="csharp">C# (.NET)</button>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-pane active" data-lang="js">
+                            <pre><button class="copy-btn" title="Copy to clipboard"><span class="material-icons-outlined">content_copy</span></button><code><span class="com">// Add a powerful datagrid to your web app</span>
+<span class="key">import</span> { FlexGrid } <span class="key">from</span> <span class="str">'@mescius/wijmo.grid'</span>;
+
+<span class="con">const</span> grid = <span class="key">new</span> FlexGrid(<span class="str">'#myGrid'</span>, {
+  itemsSource: getMyData(),
+  isReadOnly: <span class="bool">true</span>
+});</code></pre>
+                        </div>
+                        <div class="code-pane" data-lang="csharp">
+                            <pre><button class="copy-btn" title="Copy to clipboard"><span class="material-icons-outlined">content_copy</span></button><code><span class="com">// Generate a PDF document from code</span>
+<span class="key">using</span> C1.Documents;
+
+<span class="key">var</span> pdf = <span class="key">new</span> C1PdfDocument();
+pdf.AddParagraph(<span class="str">"Hello, World!"</span>);
+pdf.Save(<span class="str">"mydocument.pdf"</span>);
+
+<span class="con">Console</span>.WriteLine(<span class="str">"PDF created successfully!"</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about">
+                    <img src="https://cdn.mescius.io/umb/media/qpqhzv25/mescius-logo-horiz-white.svg" alt="MESCIUS Logo" class="footer-logo">
+                    <p class="copyright">© <span id="copyright-year">2025</span> MESCIUS inc. All Rights Reserved.</p>
+                </div>
+                <div class="footer-col links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">ComponentOne</a></li>
+                        <li><a href="#">Wijmo</a></li>
+                        <li><a href="#">ActiveReports</a></li>
+                        <li><a href="#">Spread</a></li>
+                        <li><a href="#">Document Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Demos</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Support Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link href="https://unpkg.com/tabulator-tables@6.2.0/dist/css/tabulator_midnight.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-grid.css"> 
+    <script src="https://unpkg.com/tabulator-tables@6.2.0/dist/js/tabulator.min.js"></script>
+    <script src="main.js"></script>
+    <script src="grid-init.js"></script> 
+
+</body>
+</html>
